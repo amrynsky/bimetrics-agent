@@ -1,0 +1,41 @@
+{
+  "name": "bimetrics-agent",
+  "version": "0.8.1",
+  "description": "",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc -p tsconfig.dist.json",
+    "build:watch": "tsc -w -p tsconfig.dist.json",
+    "test": "jest",
+    "test:all": "jest --coverage",
+    "test:watch": "jest --watch",
+    "lint": "tslint -t stylish --project \"tsconfig.json\"",
+    "release": "branch-release -s build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/chai": "^4.1.4",
+    "@types/debug": "0.0.30",
+    "@types/jest": "^23.3.1",
+    "@types/node": "^10.9.4",
+    "@types/stompit": "^0.26.0",
+    "branch-release": "^1.0.3",
+    "chai": "^4.1.2",
+    "jest": "^23.5.0",
+    "prettier": "^1.14.2",
+    "ts-jest": "^23.1.4",
+    "ts-node": "^7.0.1",
+    "tslint": "^5.11.0",
+    "tslint-config-prettier": "^1.15.0",
+    "tslint-microsoft-contrib": "^5.2.1",
+    "typescript": "^3.0.3"
+  },
+  "dependencies": {
+    "bimetric": "git+https://cbc79645a9ce4e8da539e73148775f97c4bfee48@github.com/mobichord/bimetric.js#v0.8.1",
+    "debug": "^4.0.1",
+    "stompit": "^0.26.0"
+  }
+}
